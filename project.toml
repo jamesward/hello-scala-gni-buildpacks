@@ -1,0 +1,23 @@
+[[build.env]]
+name = "BP_NATIVE_IMAGE"
+value = "true"
+
+[[build.env]]
+name = "BP_SBT_BUILD_ARGUMENTS"
+value = "stage"
+
+[[build.env]]
+name = "BP_SBT_BUILT_ARTIFACT"
+value = "target/universal/stage/lib/*.jar"
+
+[[build.env]]
+name = "BP_NATIVE_IMAGE_BUILT_ARTIFACT"
+value = "hello-scala-gni-buildpacks.hello-scala-gni-buildpacks-**-launcher.jar"
+
+[[build.env]]
+name = "BP_BINARY_COMPRESSION_METHOD"
+value = "upx"
+
+[[build.env]]
+name = "BP_NATIVE_IMAGE_BUILD_ARGUMENTS"
+value = "--no-fallback"
